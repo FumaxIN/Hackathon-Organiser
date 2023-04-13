@@ -26,8 +26,8 @@ Backend design for creatiion, enrollment and submission of Hackathons built on D
 ## Running
 
 After succefully installing the above dependencies, proceed to the below instructions.
-
-Firstly, navigate to `socialMedia > settings.py`and edit the `NAME`, `USER` and `PASSWORD` in `DATABASES` section to match with your data.
+Firstly login to mySql and create a database with name `hackathon`.
+Now, navigate to `socialMedia > settings.py`and edit the `NAME`, `USER` and `PASSWORD` in `DATABASES` section to match with your data.
 
 Next step is to perform migrations, i.e. giving structure to the Database to incorprate all the fields required to store data.
 Navigate to the main folder, and run the following instruction in console/terminal.
