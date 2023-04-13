@@ -8,12 +8,10 @@ Backend design for creatiion, enrollment and submission of Hackathons built on D
 * User authentication and JWT Tokenisation.
 * SSL protocol.
 * Hackathon creation by admin users.
-* Hacktons listing.
+* Hacktons listing. Already started hackathons aren't included in the list.
 * Users can enroll to a particular Hackathon.
-* Submission based on submission_type specified in Hackathon's detail.
+* Submission based on submission_type specified in Hackathon's detail. User has to first enroll and then submit.
 * List of enrollments and submissions by user.
-* Search to find matching tweets and people.
-* Basic profile customisation.
 
 ## Requirements
 
@@ -53,13 +51,13 @@ python manage.py runsslserver
 `dj-rest-auth/login` to login.
 (Hackathons can only be created by Admin Users)
 
-`api/hackathons` to get the list of upcoming hackathons.
+`api/hackathons` to get the list of upcoming hackathons. Expired or started hackathons won't be listed.
 
-`api/hackathons/<int:hackathonID>/enrol/` to enroll in a particular Hackathon.
+`api/hackathons/<int:hackathonID>/enrol/` to enroll in a particular Hackathon. User need to supply 'mail'.
 
-`api/enrollments/` to get the list of enrollments by the current logged in user.
+`api/enrollments/` to get the list of enrollments by the current logged in user. 
 
-`api/hackathons/<int:hackathonID>/submission/` submission as per the submission_type of Hackathon.
+`api/hackathons/<int:hackathonID>/submission/` submission as per the submission_type of Hackathon. User has to enrol first
 
 `api/submissions/` to get the list of submissions by the current logged in user.
 
