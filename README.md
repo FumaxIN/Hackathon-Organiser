@@ -7,7 +7,7 @@ Backend design for creatiion, enrollment and submission of Hackathons built on D
 
 * User authentication and JWT Tokenisation.
 * SSL protocol.
-* Hackathon creation by admin users.
+* Hackathon creation by staff members.
 * Hacktons listing. Already started hackathons aren't included in the list.
 * Users can enroll to a particular Hackathon.
 * Submission based on submission_type specified in Hackathon's detail. User has to first enroll and then submit.
@@ -51,7 +51,7 @@ python manage.py runsslserver
 
 `dj-rest-auth/signup` to create account.
 `dj-rest-auth/login` to login.
-(Hackathons can only be created by Admin Users)
+(Hackathons can only be created by Staff Users)
 
 `api/hackathons` to get the list of upcoming hackathons. Expired or started hackathons won't be listed.
 
