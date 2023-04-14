@@ -21,7 +21,9 @@ Backend design for creatiion, enrollment and submission of Hackathons built on D
 * [Django-Rest-Framework](https://pypi.org/project/djangorestframework/k)
 * [DJ-Rest-Auth](https://pypi.org/project/dj-rest-auth/)
 * [SimpleJWT](https://pypi.org/project/djangorestframework-simplejwt/)
-* [MariaDB](https://mariadb.org/https://mariadb.org/)
+* [Django-Allauth](https://pypi.org/project/django-allauth/)
+* [Django-SSL-Serevr](https://pypi.org/project/django-sslserver/)
+* [MySQL Client](https://pypi.org/project/mysqlclient/)
 
 ## Running
 
